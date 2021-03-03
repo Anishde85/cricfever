@@ -58,8 +58,8 @@ function Blogdetails(props){
         </div>
         </section>
        </div>
-       <a href={"/"+props.link}><button type="button" class="btn btn-primary">ScoreCard</button></a>
-        <button type="button" class="btn btn-light" onClick={addlikes}>👍{count} </button>
+       <a href={route.link}><button type="button" class="btn btn-primary">ScoreCard</button></a>
+       <button type="button" class="btn btn-light" onClick={addlikes}>👍{count} </button>
     </div>
     </div>
     )
