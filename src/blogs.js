@@ -52,7 +52,7 @@ function Blogdetails(props){
                 <h2 class="mb-5">{route.heading1}</h2>
                 <p class="blogers">{route.description}</p>
                 <p class="eleven blogers">{route.XI}</p>
-                <p class="eleven blogers">{route.XI}</p>
+                <p class="eleven blogers">{route.XII}</p>
             </div>
             </div>    
         </div>
