@@ -14,14 +14,19 @@ function Blogdetails(props){
   const route=list[props.match.params.id]
   var heading=route.heading;
     const [count, setCount] = useState(0);
+    const [state,setState]=useState(0);
     getlikes();
     function addlikes (props)
     {
         var blogRef = db.collection("blogs");
+        console.log(state);
+        if (state==1)
+            return;
         blogRef.doc(heading).set({
             likes:count+1,
         });
         getlikes();
+        setState(1);
     }
     function getlikes (props)
     {
